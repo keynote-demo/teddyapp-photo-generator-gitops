@@ -1,0 +1,15 @@
+app:
+  name: teddyapp-photo-generator-app
+  namespace: teddyapp
+  cluster: .apps.keynote.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/keynote-demo/teddyapp-photo-generator
+  org: keynote-demo
+  name: teddyapp-photo-generator
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: teddyapp/photo-generator-app
+  tag: latest
